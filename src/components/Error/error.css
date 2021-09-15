@@ -1,0 +1,53 @@
+.error-section{
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.error-wrapper{
+    height: 300px;
+    width: 850px;
+    text-align: center;
+}
+.error-wrapper h1{
+    font-size: 2.7rem;
+    color: var(--main-text-color)
+}
+.error-wrapper p{
+    margin-top: 20px;
+    font-weight: 600;
+}
+.error-wrapper button{
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    color: white;
+    margin-top: 20px;
+}
+.error-wrapper button:hover{
+    background-color: white;
+    color: var(--primary-color);
+}
+
+
+
+
+
+
+
+
+
+/* ############ Responsive Style ############# */
+@media only screen and (max-width:900px){
+    .error-wrapper{
+        width: 500px;
+    }
+    .error-wrapper h1{
+        font-size: 2rem;
+    }
+}
+@media only screen and (max-width: 600px){
+    .error-section{
+        padding: 0px 10px;
+    }
+}

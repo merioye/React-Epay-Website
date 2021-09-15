@@ -1,0 +1,142 @@
+ /* ######### Main Hero Section Style ########### */
+.main-hero-section{
+    width: 100%;
+    height: 1000px;
+    background-color: var(--bgcolor);
+    padding: 0px 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+/* ########## Main Hero Left Side(Text Section) Style ############# */
+.main-hero-text{
+    width: 550px;
+    height: 430px;
+    margin-top: 230px;
+}
+.main-hero-text h1{
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: var(--main-text-color);
+    margin-bottom: 40px;
+}
+.main-hero-text p{
+    color: #828286;
+    margin-bottom: 50px;
+}
+.main-hero-text h2{
+    color: var(--main-text-color);
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+.main-hero-text div{
+    display: inline-block;
+    position: relative;
+}
+.main-hero-text input{
+    height: 49px;
+    width: 350px;
+    border-radius: 30px;
+    padding-left: 20px;
+    font-size: 0.9rem;
+    border: none;
+    outline: none;
+    box-shadow: 5px 5px 20px -16px black;
+}
+.main-hero-text button{
+    font-size: 0.8rem;
+    position: absolute;
+    top: 15%;
+    right: 2%;
+    z-index: 2;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+
+
+
+
+
+/* ########## Main Hero Right Side(Image Section) Style ############# */
+.main-hero-image{
+    height: 670px;
+    width: 600px;
+    margin-top: 100px;
+}
+.main-hero-image img{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+/* ########### Responsive Style ############# */
+@media only screen and (max-width:1450px){
+    .main-hero-text{
+        width: 450px;
+    }
+    .main-hero-image{
+        width: 400px;
+        height: 470px;
+    }
+}
+@media only screen and (max-width:1250px){
+    .main-hero-section{
+        padding: 0px 50px;
+    }
+}
+@media only screen and (max-width: 1000px){
+    .main-hero-section{
+        padding: 0px 20px;
+    }
+}
+@media only screen and (max-width:900px){
+    .main-hero-section{
+        height: 1200px;
+        padding: 0px 50px;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    .main-hero-text{
+        width: 100%;
+        margin-top: -150px;
+    }
+    .main-hero-text h1{
+        font-size: 2rem;
+    }
+    .main-hero-image{
+        margin-top: 0px;
+        margin: 0px auto;
+    }
+}
+@media only screen and (max-width:500px){
+    .main-hero-section{
+        padding: 0px 20px;
+    }
+    .main-hero-image{
+        width: 300px;
+        height: 370px;
+    }
+    .main-hero-text{
+        height: 500px;
+    }
+    .main-hero-text h1{
+        font-size: 1.7rem;
+    }
+    .main-hero-text input{
+        width: 300px;
+    }
+}

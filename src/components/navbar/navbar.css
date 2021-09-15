@@ -1,0 +1,162 @@
+/* ########## Main Nav Container Style ########### */
+.navbar{
+    height: 100px;
+    width: 100%;
+    background-color: var(--bgcolor);
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 150px;
+}
+
+
+/* ########## Logo Style ########## */
+.logo{
+    height: 100%;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    color: var(--main-text-color);
+}
+.logo h1{
+    font-size: 1.8rem;
+}
+.logo h1 span{
+    font-size: 2.2rem;
+}
+
+
+/* ############# Hamburger icon Style ################ */
+.hamburger-icon{
+    height: 28px;
+    width: 37px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+    cursor: pointer;
+    padding: 4px;
+    border: 1px solid #b7b7bb;
+}
+.line{
+    border: 2px solid black;
+}
+
+
+
+
+
+/* ########## Menu Items  Style ############ */
+.menu-items-wrapper{
+    height: 100%;
+    width: 700px;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0px;
+}
+
+ul li{
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+.link{
+    text-decoration: none;
+    color: #828286;
+}
+.link:hover{
+    color: var(--primary-color);
+}
+
+.btns-wrapper{
+    width: 230px;
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 8px 20px;
+    border-radius: 50px;
+    outline: none;
+    border: 1px solid var(--primary-color);
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+.sign-up-btn{
+    background-color: var(--primary-color);
+    color: white;
+}
+.sign-up-btn:hover{
+    background-color: white;
+    color: var(--primary-color);
+}
+
+.sign-in-btn{
+    background-color: white;
+    color: var(--primary-color);
+}
+.sign-in-btn:hover{
+    background-color: var(--primary-color);
+    color: white;
+}
+
+
+
+
+
+.activeLink{
+    color: var(--primary-color);
+    border-bottom: 1px solid red;
+}
+
+
+
+
+
+
+
+
+/* ############### Responsive Style starts here ############## */
+@media only screen and (max-width:1276px){
+    .navbar{
+        padding: 0px 50px;
+    }
+}
+@media only screen and (max-width:1000px){
+    .navbar{
+        padding: 0px 20px;
+    }
+}
+@media only screen and (max-width:900px){
+    .navbar{
+        height: 75px;
+        padding: 0px 40px;
+    }
+    .hamburger-icon{
+        display: flex;
+    }
+    .menu-items-wrapper{
+        width: 100%;
+        height: 270px;
+        position: absolute;
+        left: 0;
+        top: 75px;
+        z-index: 50;
+        background: var(--bgcolor);
+        display: none;
+    }
+    ul{
+        flex-direction: column;
+        height: 270px;
+        margin-left: 43px;
+    }
+    .item{
+        width: 70px;
+    }
+}
